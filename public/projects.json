@@ -37,11 +37,11 @@
     },
     {
       "_id": "62a37cea3cd01444b22db5fc",
-      "image": "http://placehold.it/32x32",
-      "name": "Lottie",
-      "liveLink": "src",
-      "gitLink": "src",
+      "image": "https://i.ibb.co/vXV4th0/Mobile-Bari.png",
+      "name": "Mobile Bari",
+      "liveLink": "https://vigilant-bardeen-deeb4e.netlify.app/",
+      "gitLink": "https://github.com/muhayminul96/Mobile-Bari",
       "serverLink": false,
-      "description": "it is a small project"
+      "description": "This website for mobile devises"
     }
   ]
