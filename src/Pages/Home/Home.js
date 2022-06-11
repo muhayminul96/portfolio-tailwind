@@ -6,7 +6,7 @@ import MyProjects from "./MyProjects";
 
 const Home = () => {
   return (
-    <div>
+    <div className="container overflow-hidden">
       <Intro></Intro>
       <MyProjects></MyProjects>
       <Contract></Contract>

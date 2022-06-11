@@ -43,7 +43,7 @@ const Navbar = () => {
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal p-0">{menu}</ul>
       </div>
-      <div className="navbar-end">
+      <div className="navbar-end text-2xl font-bold">
         <a
           href="../../../public/resume/syed_muhayminul_resume.pdf"
           className="btn rounded-lg"
