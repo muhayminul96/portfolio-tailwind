@@ -3,6 +3,8 @@ import "./App.css";
 import Navbar from "./Pages/Shared/Navbar";
 import Home from "./Pages/Home/Home";
 import Footer from "./Pages/Shared/Footer";
+import Blog from "./Pages/Blog/Blog";
+import About from "./Pages/About/About";
 
 function App() {
   return (
@@ -10,6 +12,9 @@ function App() {
       <Navbar></Navbar>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/about" element={<About />} />
       </Routes>
       <Footer></Footer>
     </div>

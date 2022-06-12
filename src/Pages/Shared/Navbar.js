@@ -1,13 +1,17 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const menu = (
     <>
       <li>
-        <a>Home</a>
+        <Link to='/home'>Home</Link>
       </li>
       <li>
-        <a>About</a>
+        <Link to='/blog'>Blog</Link>
+      </li>
+      <li>
+        <Link to='/about'>About</Link>
       </li>
     </>
   );
@@ -15,7 +19,7 @@ const Navbar = () => {
     <div className="navbar bg-base-400">
       <div className="navbar-start">
         <div className="dropdown">
-          <label tabIndex="0" className="b   tn btn-ghost lg:hidden">
+          <label tabIndex="0" className="btn btn-ghost lg:hidden">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-5 w-5"
@@ -49,7 +53,7 @@ const Navbar = () => {
           className="btn rounded-lg"
           download
         >
-          Ressume
+          Resume
         </a>
       </div>
     </div>
