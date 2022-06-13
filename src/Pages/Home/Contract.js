@@ -31,7 +31,7 @@ const Contract = () => {
       <div class="hero-content flex-col  lg:flex-row-reverse">
         <div class="text-center lg:text-left">
           <h1 class="text-5xl font-bold">Contract me</h1>
-          <p class="py-6">you can contract me.</p>
+          <p class="py-6">you can contact me.</p>
         </div>
         <div class="card flex-shrink-0 w-full lg:mr-28 max-w-sm shadow-2xl bg-base-100">
           <form class="card-body" ref={form} onSubmit={sendEmail}>
@@ -74,8 +74,8 @@ const Contract = () => {
             <div class="form-control mt-6">
               <input type="submit" value="Send" class="btn btn-primary" />
             </div>
-            {
-              done && <div class="alert alert-success shadow-lg">
+            {done && (
+              <div class="alert alert-success shadow-lg">
                 <div>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -93,7 +93,7 @@ const Contract = () => {
                   <span>Send message successfully</span>
                 </div>
               </div>
-            }
+            )}
           </form>
         </div>
       </div>

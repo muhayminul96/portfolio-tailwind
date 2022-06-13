@@ -10,8 +10,10 @@ const MyProjects = () => {
   }, []);
   return (
     <div className="my-16">
-      <h1 className="text-6xl font-extrabold mb-12 text-accent">My Projects</h1>
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 bg-base-100">
+      <h1 className="text-4xl lg:text-6xl  font-extrabold mb-12 text-accent">
+        My Projects
+      </h1>
+      <div className="grid grid-cols-1 lg:grid-cols-3 lg:gap-4 bg-base-100">
         {projects.map((project) => (
           <Project key={project._id} project={project}></Project>
         ))}
