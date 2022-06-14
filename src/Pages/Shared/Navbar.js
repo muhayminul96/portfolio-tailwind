@@ -5,13 +5,13 @@ const Navbar = () => {
   const menu = (
     <>
       <li>
-        <Link to='/home'>Home</Link>
+        <Link to="/home">Home</Link>
       </li>
       <li>
-        <Link to='/blog'>Blog</Link>
+        <Link to="/blog">Blog</Link>
       </li>
       <li>
-        <Link to='/about'>About</Link>
+        <Link to="/about">About</Link>
       </li>
     </>
   );
@@ -42,7 +42,9 @@ const Navbar = () => {
             {menu}
           </ul>
         </div>
-        <a className="btn btn-ghost normal-case text-xl">Muhayminul</a>
+        <Link to="/home" className="btn btn-ghost normal-case text-xl">
+          Muhayminul
+        </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal p-0">{menu}</ul>
