@@ -1,14 +1,16 @@
+import { motion } from "framer-motion";
 import React from "react";
 
 const Project = ({ project }) => {
   const { name, image, liveLink, description, gitLink, serverLink, _id } =
     project;
+
   return (
-    <div class="card w-full bg-base-100 shadow-xl mx-auto overflow-hidden">
+    <motion.div class="card w-full bg-base-100 shadow-xl mx-auto o">
       <figure>
-        <img src={image} alt={name} />
+        <motion.img src={image} alt={name} />
       </figure>
-      <div class="card-body text-left ">
+      <div class="card-body text-left bg-base-100">
         <a href={liveLink} target="_blank" rel="noreferrer">
           <h2 class="card-title text-2xl font-bold">{name}</h2>
         </a>
@@ -25,7 +27,7 @@ const Project = ({ project }) => {
           )}
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

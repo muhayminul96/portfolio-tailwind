@@ -1,5 +1,6 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import { motion } from "framer-motion";
 
 const Contract = () => {
   const form = useRef();
@@ -28,18 +29,19 @@ const Contract = () => {
   };
   return (
     <div class="hero min-h-screen bg-base-200 ">
-      <div class="hero-content flex-col  lg:flex-row-reverse">
-        <div class="text-center lg:text-left">
-          <h1 class="text-5xl font-bold">Contract me</h1>
+      <div class="hero-content flex-col  lg:flex-row-reverse justify-between">
+        <div class="text-center lg:text-left w-full">
+          <h1 class="text-5xl font-bold">Contact me</h1>
           <p class="py-6">you can contact me.</p>
         </div>
-        <div class="card flex-shrink-0 w-full lg:mr-28 max-w-sm shadow-2xl bg-base-100">
+        <div class="card flex-shrink-0 w-full lg:px-14 lg:mr-28  max-w-lg mx-auto shadow-2xl bg-base-100">
           <form class="card-body" ref={form} onSubmit={sendEmail}>
             <div class="form-control">
               <label class="label">
                 <span class="label-text">Email</span>
               </label>
-              <input
+              <motion.input
+                whileFocus={{ scale: 1.2 }}
                 type="email"
                 placeholder="Email"
                 name="user_email"
@@ -51,7 +53,8 @@ const Contract = () => {
               <label class="label">
                 <span class="label-text">Name</span>
               </label>
-              <input
+              <motion.input
+                whileFocus={{ scale: 1.2 }}
                 type="text"
                 placeholder="Name"
                 class="input input-bordered"
@@ -63,7 +66,8 @@ const Contract = () => {
               <label class="label">
                 <span class="label-text">Message</span>
               </label>
-              <textarea
+              <motion.textarea
+                whileFocus={{ scale: 1.2 }}
                 type="text"
                 placeholder="Message"
                 name="message"

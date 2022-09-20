@@ -6,11 +6,15 @@ import Footer from "./Pages/Shared/Footer";
 import Blog from "./Pages/Blog/Blog";
 import About from "./Pages/About/About";
 import NotFound from "./Pages/NotFound";
+import { useState } from "react";
 
 function App() {
+  const [darkTheme,setDarkTheme] = useState(true);
+
+  
   return (
-    <div className="App w-full overflow-hidden container lg:px-5">
-      <Navbar></Navbar>
+    <div data-theme={darkTheme?'business':'wireframe'} className="App mx-auto overflow-hidden container lg:px-5">
+      <Navbar darkTheme={darkTheme} setDarkTheme={setDarkTheme}></Navbar>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
